@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#2196f3">
+    
+    <title>RickTech</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/remixicon/remixicon.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="view view-main">
+
+            <!-- Página Inicial -->
+            <div data-name="detalhes" class="page color-theme-blue">
+                 <!-- Barra Inferior de Navegação -->
+            <div class="toolbar toolbar-bottom">
+                <div class="toolbar-inner display-flex align-items-center justify-content-center">
+                   <div class="flex-40 text-align-center"><span id="preco-detalhe"class="riscado color-gray">R$ 14000</span><h3 id="precopromo-detalhe" class="princing no-padding no-margin"> R$ 1200</h3>
+                </div>
+                   <div class="flex-60">
+                    <button class="add-cart">Adicionar Carrinho</button>
+                   </div>
+                </div>
+            </div>
+
+
+                <!-- Carrossel de Imagens -->
+                <div class="page-content">
+                    <div class="prod-detail">
+                        <div class="buttons-top">
+                            <a href="/index/"><i class="ri-arrow-left-s-line"></i></a>
+                            <a href="#"><i class="ri-heart-3-line"></i></a>
+                            <a href="#"><i class="ri-share-2-line"></i></a>
+                        </div>
+                        <img id="imagem-detalhe" src="img/default.png">
+                    </div>
+                    <div class="prdo-content">
+                        <div class="block">
+                            <div class="line padding-top">
+                                <b id="nome-detalhe" class="margin-left">Nome do Produto</b>
+                                <button class="promo-btn">Promoção</button>
+                            </div>
+                            <div class="margin-top display-flex align-items-center justify-content-start">
+                                <button class="margin-left btn-rates"><i class="mdi mdi-star"></i><span id="rating-detalhe">4.8</span></button>
+                                <button class="btn-rates"><i class="ri-thumb-up-fill"></i><span id="like-detalhe">90%</span></button>
+                                <span id="reviews-detalhe" class="color-gray">110 reviews</span>
+                            </div>
+                            <div class="display-flex align-items-center justify-content-center">
+                                <p id="descricao-detalhe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis modi magnam, officia dolorum, odit sit sequi iusto excepturi debitis dolor amet laboriosam? Minima, libero eveniet explicabo ab tempora ipsum labore.</p>
+                            </div>
+
+                        <table id="tabdetalhes">
+                            <tr>
+                                <th>Características</th>
+                                <th>Detalhes</th>
+                            </tr>                 
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Fim da Página -->
+        </div> <!-- Fim da View -->
+    </div> <!-- Fim do App -->
+
+    <!-- JavaScript -->
+    <script src="lib/framework7-bundle.min.js"></script>
+    <script src="lib/jquery-3.7.0.min.js"></script>    
+    <script src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#2196f3">
+    
+    <title>RickTech</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/detalhes.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/remixicon/remixicon.css">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png">
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="view view-main">
+            
+            <!-- Barra Inferior de Navegação -->
+            <div id="menuPrincipal" class="toolbar toolbar-bottom">
+                <div class="toolbar-inner">
+                    <a href="/index/" class="tab-link link active">
+                        <i class="ri-home-5-line"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="/link2/" class="tab-link link">
+                        <i class="ri-search-2-line"></i>
+                        <span>Busca</span>
+                    </a>
+                    <a href="/link3/" class="tab-link link">
+                        <i class="ri-heart-3-line"></i>
+                        <span>Favoritos</span>
+                    </a>
+                    <a href="/link4/" class="tab-link link">
+                        <i class="ri-user-line"></i>
+                        <span>Perfil</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Página Inicial -->
+            <div data-name="index" class="page color-theme-blue">
+                
+                <!-- Cabeçalho -->
+                <header class="top-nav">
+                    <h1 class="title-logo"><span>Rick</span>Tech</h1>
+                    <a href="/carrinho/" class="btn-cart" data-count="0">
+                        <i class="ri-shopping-bag-line"></i>
+                    </a>
+                </header>
+
+                <!-- Barra de Busca -->
+                <form class="search-form">
+                    <input id="search" placeholder="O que você procura?" aria-label="Campo de busca">
+                    <button type="submit" class="btn-search">
+                        <i class="ri-search-2-line"></i>
+                    </button>
+                </form>
+
+                <!-- Carrossel de Imagens -->
+                <div class="page-content">
+                    <div class="block no-margin-top">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/propaganda.png" alt="Promoção 1"></div>
+                                <div class="swiper-slide"><img src="img/propaganda2.png" alt="Promoção 2"></div>
+                                <div class="swiper-slide"><img src="img/propaganda3.png" alt="Promoção 3"></div>
+                                <div class="swiper-slide"><img src="img/propaganda4.png" alt="Promoção 4"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div class="display-flex align-items-center justify-content-between">
+                            <h2>Categorias</h2>
+                            <a href="#">Veja todas<i class="mdi mdi-arrow-right"></i></a>
+                        </div>
+
+                        <div class="swiper categorias">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><button class="filter-btn active">Todas</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Notebooks</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Tablets</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Smartwatches</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Fones de Ouvido</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Monitores</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Teclados</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Mouses</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Câmeras</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Impressoras</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Caixas de Som</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Smart TVs</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Projetores</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Consoles</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Headsets</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Carregadores</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Placas de Vídeo</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">HDs Externos</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">SSD</button></div>
+                                <div class="swiper-slide"><button class="filter-btn">Drones</button></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div id="produtos" class="margin-top row display-flex align-items-center justify-content-start"></div>
+
+                        <!-- ITEM SKELETON -->
+                        <div class="item-card">
+                            <a href="/detalhes/" class="item">
+                                <div class="img-container skeleton-effect-wave"> 
+                                </div>
+                                <div class="nome-rating">
+                                    <span style="margin-right:auto; width: 90px;" class="gelo skeleton-effect-wave gelo skeleton-block color-gray"></span>
+
+                                        <span style="width: 20px;margin-right: 5px;" class="gelo skeleton-effect-wave gelo skeleton-block"></span>
+
+                                    <span style="width: 30px;margin-right: 15px;" class="gelo skeleton-effect-wave gelo skeleton-block"></span>
+                                    
+                                <div class="price">
+                                    <span style="margin-top: 5px;height: 20px; width: 60px;" class="gelo skeleton-effect-wave gelo skeleton-block"></span></div>
+                                </div>
+                            </a>
+                        </div>
+                    <br><br><br><br><br><br>
+                </div>
+            </div> <!-- Fim da Página -->
+        </div> <!-- Fim da View -->
+    </div> <!-- Fim do App -->
+
+    <!-- JavaScript -->
+    <script src="lib/framework7-bundle.min.js"></script>
+    <script src="lib/jquery-3.7.0.min.js"></script>    
+    <script src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>
